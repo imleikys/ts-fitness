@@ -1,4 +1,4 @@
-import {Navbar} from '@/screens/';
+import {Navbar, Home} from '@/screens/';
 import {useState, useEffect} from 'react';
 import {SelectedPage} from '@/shared/types';
 
@@ -28,6 +28,9 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
         isTopPage={isTopPage}
+      />
+      <Home 
+        setSelectedPage={setSelectedPage}
       />
     </div>
   )
