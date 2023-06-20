@@ -1,4 +1,4 @@
-import {Navbar, Home, Benefits, OurClasses} from '@/screens/';
+import {Navbar, Home, Benefits, OurClasses, ContactUs} from '@/screens/';
 import {useState, useEffect} from 'react';
 import {SelectedPage} from '@/shared/types';
 
@@ -32,6 +32,7 @@ function App() {
       <Home setSelectedPage={setSelectedPage}/>
       <Benefits setSelectedPage={setSelectedPage}/>
       <OurClasses setSelectedPage={setSelectedPage}/>
+      <ContactUs setSelectedPage={setSelectedPage}/>
     </div>
   )
 }
